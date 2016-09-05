@@ -1,0 +1,13 @@
+Source: ros-indigo-humanoid-localization
+Section: misc
+Priority: extra
+Maintainer: Armin Hornung <HornungA@informatik.uni-freiburg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-cmake-modules, ros-indigo-geometry-msgs, ros-indigo-message-filters, ros-indigo-nav-msgs, ros-indigo-octomap, ros-indigo-octomap-msgs, ros-indigo-octomap-ros, ros-indigo-pcl-conversions, ros-indigo-pcl-ros, ros-indigo-roscpp, ros-indigo-sensor-msgs, ros-indigo-std-msgs, ros-indigo-std-srvs, ros-indigo-tf, ros-indigo-visualization-msgs
+Homepage: http://ros.org/wiki/humanoid_localization
+Standards-Version: 3.9.2
+
+Package: ros-indigo-humanoid-localization
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-geometry-msgs, ros-indigo-message-filters, ros-indigo-nav-msgs, ros-indigo-octomap, ros-indigo-octomap-msgs, ros-indigo-octomap-ros, ros-indigo-pcl-conversions, ros-indigo-pcl-ros, ros-indigo-roscpp, ros-indigo-sensor-msgs, ros-indigo-std-msgs, ros-indigo-std-srvs, ros-indigo-tf, ros-indigo-visualization-msgs
+Description: 6D localization for humanoid robots based on depth data (laser, point clouds).
+ Two observation models are currently available based on OctoMap as 3D map: Ray casting and an end point model (lookup in the distance map). Details can be found in the publication &quot;Humanoid Navigation with Dynamic Footstep Plans&quot; by A. Hornung, K.M. Wurm, and M. Bennewitz; published in IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2010
