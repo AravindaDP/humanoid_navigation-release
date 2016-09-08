@@ -1,0 +1,12 @@
+Source: ros-indigo-humanoid-navigation
+Section: misc
+Priority: extra
+Maintainer: Armin Hornung <HornungA@informatik.uni-freiburg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://ros.org/wiki/humanoid_navigation
+Standards-Version: 3.9.2
+
+Package: ros-indigo-humanoid-navigation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-footstep-planner, ros-indigo-gridmap-2d, ros-indigo-humanoid-localization
+Description: This stack contains packages for humanoid (biped) navigation, developed at the Humanoid Robots Lab at the Albert-Ludwigs-Universitat in Freiburg, Germany.
