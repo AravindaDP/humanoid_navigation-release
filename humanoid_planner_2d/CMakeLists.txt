@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(humanoid_planner_2d)
 
-find_package(catkin REQUIRED geometry_msgs gridmap_2d roscpp)
+find_package(catkin REQUIRED geometry_msgs visualization_msgs gridmap_2d roscpp)
 
 ## CMake config:
 #find_package(sbpl REQUIRED)
@@ -19,8 +19,7 @@ catkin_package(
   DEPENDS sbpl  
 )
 
-include_directories(include)
-include_directories(${catkin_INCLUDE_DIRS})
+include_directories(include ${catkin_INCLUDE_DIRS})
 
 add_library(${PROJECT_NAME} src/SBPLPlanner2D.cpp)
 target_link_libraries(${PROJECT_NAME} ${SBPL_LIBRARIES} ${catkin_LIBRARIES})
